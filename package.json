@@ -1,6 +1,6 @@
 {
     "name": "my-css-library",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A CSS library with ready-made styles",
     "main": "style.css", 
     "scripts": {
