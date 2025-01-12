@@ -1,5 +1,5 @@
 {
-    "name": "my-css-library",
+    "name": "@shahdcrafts/my-css-library",
     "version": "1.0.2",
     "description": "A CSS library with ready-made styles",
     "main": "style.css",

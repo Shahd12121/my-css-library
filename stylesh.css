@@ -1,0 +1,366 @@
+
+:root {
+    /* الألوان الأساسية */
+    --primary-color: #3498db;   /* اللون الأساسي - يستخدم للأزرار والخلفيات الرئيسية */
+    --secondary-color: #2ecc71; /* اللون الثانوي - يستخدم للأزرار الثانوية أو العناصر المكملة */
+    
+    /* ألوان التحذيرات والنجاح */
+    --danger-color: #e74c3c;    /* اللون للتحذيرات - يستخدم في التنبيهات أو الرسائل التحذيرية */
+    --success-color: #2ecc71;   /* اللون للنجاحات - يستخدم في الرسائل الناجحة أو إشعارات النجاح */
+    --warning-color: #f39c12;   /* اللون للتحذيرات - يستخدم في التحذيرات أو الإشعارات الهامة */
+  
+    /* ألوان الأوضاع المختلفة */
+    --light-color: #ecf0f1;     /* اللون الفاتح - يستخدم كخلفية أو في العناصر الخفيفة */
+    --dark-color: #2c3e50;      /* اللون الداكن - يستخدم في النصوص أو الأزرار الداكنة */
+    
+    /* ألوان النصوص والخلفيات */
+    --text-color: #333;         /* لون النص - يستخدم في النصوص العامة */
+    --background-color: #fff;   /* لون الخلفية - يستخدم في الخلفية العامة */
+    
+    /* ألوان إضافية */
+    --accent-color: #9b59b6;    /* اللون المكمل - يستخدم لتسليط الضوء على بعض العناصر أو الأيقونات */
+    --muted-color: #95a5a6;     /* اللون المطفأ - يستخدم في النصوص الثانوية أو العناوين الثانوية */
+
+    --info-color: #1abc9c;      /* اللون للمعلومات - يستخدم في الرسائل أو الأزرار المعلوماتية */
+    --light-background: #f4f6f7; /* اللون الخلفي الفاتح - يستخدم كخلفية للأقسام الثانوية */
+    --highlight-color: #e67e22; /* اللون لتسليط الضوء - يستخدم على النصوص أو العناصر المهمة */
+    --gradient-start: #ff6347;   /* بداية التدرج - لون يبدأ به التدرج */
+    --gradient-end: #ff4500;     /* نهاية التدرج - لون ينتهي به التدرج */
+    --link-color: #3498db;       /* اللون الروابط - يستخدم لتحديد الروابط */
+    --border-color: #bdc3c7;     /* اللون لحدود العناصر - مثل حدود الأزرار أو الحقول */
+  } 
+
+/* Card Container */
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Card Image */
+  .card-img {
+    width: 100%;
+    height: 55%; 
+    object-fit: cover;
+    transform: scale(1.1); 
+  }
+  
+  /* Card Content */
+  .card-content {
+    padding: 10px 20px;
+    height: 45%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Card Title */
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Card Description */
+  .card-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  /* Card Button */
+  .card-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 20px;
+  
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 25px;
+  }
+  
+  .card-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* buttons.css */
+
+/* الزر الأساسي */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+   
+  }
+
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: 1px solid var(--primary-color);
+  }
+  /* يُستخدم لإجراء العمليات الأساسية مثل إرسال النموذج أو تأكيد العملية */
+  
+  .btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    border: 1px solid var(--secondary-color);
+  }
+  /* يُستخدم للعمليات الثانوية مثل إلغاء أو التراجع */
+  
+  .btn-danger {
+    background-color: var(--danger-color);
+    color: var(--background-color);
+    border: 1px solid var(--danger-color);
+  }
+   /* يُستخدم للإجراءات التي قد تكون غير قابلة للتراجع أو قد تضر المستخدم مثل حذف أو إلغاء */
+  
+  .btn-success {
+    background-color: var(--success-color);
+    color: var(--background-color);
+    border: 1px solid var(--success-color);
+  }
+   /* يُستخدم للإجراءات التي تُشير إلى نجاح أو إتمام عملية مثل حفظ، تأكيد، أو إتمام عملية بنجاح */
+
+   .btn-bordered {
+    border: 2px solid var(--border-color); 
+    background-color: var(--background-color);
+    color: var(--primary-color); 
+    /* يُستخدم للتصاميم البسيطة التي تحتاج إلى زر بسيط بدون خلفية ملونة */
+  }
+
+  /* تنسيق الحقول النصية */
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border: 1px solid var(--border-color); 
+    border-radius: 5px; 
+    background-color: var(--background-color); 
+    color: var(--text-color); 
+    width: 100%; 
+    font-size: 16px;
+  }
+  
+  /* تنسيق أزرار الحقول */
+  input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif; 
+    background-color: var(--background-color); 
+    color: var(--text-color); 
+    margin: 0;
+    padding: 0;
+    font-size: 16px; 
+  }
+
+  .p-2 {
+    padding: 8px;
+  }
+  .m-2 {
+    margin: 8px;
+  }
+  .rounded {
+    border-radius: 8px;
+  }
+
+  /* محاذاة افقيا وعموديا */
+  .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  /* محاذاة عموديا */
+  .vertical {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*تنسيق العناوين */
+h1 {
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    color: var(--primary-color); 
+    margin-bottom: 20px; 
+  }
+  
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color); 
+    margin-bottom: 18px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dark-color); 
+    margin-bottom: 16px;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: var(--dark-color);
+    margin-bottom: 12px;
+  }
+  
+  h5 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+  }
+
+  h6 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-color);
+    margin-bottom: 10px;
+  }
+
+  /* تنسيق الفقرات */
+p {
+    font-size: 1rem; 
+    line-height: 1.5; 
+    margin-bottom: 20px; 
+    color: var(--text-color); 
+  }
+
+  /* تنسيق الروابط */
+a {
+    text-decoration: none; 
+    color: var(--primary-color); 
+  }
+
+  /* تنسيق الجدول */
+table {
+    width: 100%;
+    margin: 15px 0;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left; 
+    border-bottom: 1px solid var(--border-color); 
+  }
+  
+  th {
+    background-color: var(--primary-color); 
+    color: var(--background-color); 
+  }
+/* float */
+  .float-left {
+    float: left; /* العنصر على اليسار */
+    margin-right: 10px; /* مسافة من اليمين */
+  }
+  
+  .float-right {
+    float: right; /* العنصر على اليمين */
+    margin-left: 10px; /* مسافة من اليسار */
+  }
+  /* صورة مع النص */
+  .image-left {
+    float: left;
+    width: 50%;
+    margin-right: 20px;
+  }
+  
+  .image-right {
+    float: right;
+    width: 50%;
+    margin-left: 20px;
+  }
+ /* float ازالة تاثير */
+  .clear {
+    clear: both;
+  }
+  /* صندوق شفاف باطراف مستديرة */
+  .box-rounded {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+/* navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--border-color);
+    height: 7rem;
+  }
+
+  nav ul {
+    display: flex;
+    margin: 10px 2rem;
+    padding: 0 10px;
+    
+  }
+
+  ul a {
+    padding:  10px 25px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  nav .logo img {
+    border-radius: 50%;
+    padding: 20px;
+    width: 90px;
+  }
+
+  /* icons */
+  .icon {
+    font-size: 1.5rem; 
+    color: var(--primary-color); 
+    margin: 8px; 
+  }
+  .icon-shadow {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+  }
+
+/* boxshadow */
+
+/* اتجاه الظل يمين وأسفل */
+  .box-shadow-basic {
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2); 
+  }
+  /* ظل ناعم وخفيف */
+  .box-shadow-soft {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  /* ظل أكبر وأعلى */
+  .box-shadow-floating {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+  }
+  /* ظل أزرق */
+  .box-shadow-colored {
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4); 
+  }
